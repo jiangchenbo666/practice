@@ -1,2 +1,2 @@
 def main() -> None:
-    print("Hello from practice!,jcb666")
+    print("Hello from practice!,main-version")
