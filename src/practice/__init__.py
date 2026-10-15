@@ -1,6 +1,11 @@
 def main() -> None:
-    input_tokens = int(input("Enter the number of input tokens: "))
-    output_tokens = int(input("Enter the number of output tokens: "))
+    try:
+        input_tokens = int(input("Enter the number of input tokens: "))
+        output_tokens = int(input("Enter the number of output tokens: "))
+    except ValueError:
+        print("Error: please enter a whole number, e.g. 1000.")
+        return
+
     input_price_per_million = 2
     output_price_per_million = 8
 
